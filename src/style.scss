@@ -1,10 +1,21 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: "Bon Vivant";
 }
 
 *,*::before, *::after{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+:root{
+    --var-color-1: #f5efe2;
+    --var-color-2: #161616;
+}
+
+@font-face{
+    font-family: "Bon Vivant";
+    src: url('fonts/Bon Vivant Serif.otf');
 }
