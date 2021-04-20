@@ -1,1 +1,1 @@
-{"version":3,"sources":["app.js"],"names":[],"mappings":"AAAA","file":"app.c328ef1a.js","sourceRoot":"..\\src","sourcesContent":["//"]}
+{"version":3,"sources":["app.js"],"names":["listItems","document","querySelectorAll","console","log"],"mappings":";;;;;;;;;;;;AAAA,IAAIA,SAAS,sBAAOC,QAAQ,CAACC,gBAAT,CAA0B,IAA1B,CAAP,CAAb;;AACAC,OAAO,CAACC,GAAR,CAAYJ,SAAZ","file":"app.c328ef1a.js","sourceRoot":"..\\src","sourcesContent":["let listItems = [...document.querySelectorAll(\"li\")];\r\nconsole.log(listItems);"]}
