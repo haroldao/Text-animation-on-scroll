@@ -47,12 +47,27 @@ main ul {
   flex-direction: column;
   justify-content: flex-end;
 }
+main ul li {
+  overflow: hidden;
+  height: 4rem;
+  display: flex;
+  margin-bottom: 0.5rem;
+  justify-content: flex-end;
+}
 main ul li span {
   display: block;
   line-height: 4rem;
   font-size: 4rem;
   text-transform: uppercase;
   margin: 0.05rem;
+}
+main ul li span.active {
+  transform: translateY(0%);
+  transition: 1s ease-out;
+}
+main ul li span:hover {
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=/style.97fcb138.css.map */
