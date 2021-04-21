@@ -134,22 +134,37 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 var listItems = _toConsumableArray(document.querySelectorAll("li")); // console.log(listItems);
 
 
-var options = {
+options = {
   rootMargin: '-10%',
   threshold: 0.0
 };
-var observer = new IntersectionObserver(showItem, options);
+observer = new IntersectionObserver(showItem, options);
 
 function showItem(entries) {
-  console.log(entries);
+  // console.log(entries)
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
+      var letters = _toConsumableArray(entry.target.querySelectorAll("span"));
+
+      letters.forEach(function (letter, idx) {
+        setTimeout(function () {
+          letter.classList.add("active");
+        }, 10);
+      });
       entry.target.children[0].classList.add("active");
     }
   });
 }
 
+;
 listItems.forEach(function (item) {
+  var newString = "";
+  itemText = item.children[0].innerHTML.split("");
+  itemText.map(function (letter) {
+    return newString += letter == " " ? "<span class=\"gap\"></span>" : "<span>".concat(letter, "</span>");
+  });
+  console.log(itemText);
+  item.innerHTML = newString;
   observer.observe(item);
 });
 },{}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -180,7 +195,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60370" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57421" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
