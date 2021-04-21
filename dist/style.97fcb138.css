@@ -67,18 +67,18 @@ main ul {
 }
 main ul li {
   overflow: hidden;
-  height: 4rem;
+  height: 6vw;
   display: flex;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5vw;
   justify-content: flex-end;
   transition: 0.2s ease-out;
 }
 main ul li span {
   display: block;
-  line-height: 4rem;
-  font-size: 4rem;
+  line-height: 6vw;
+  font-size: 6vw;
   text-transform: uppercase;
-  margin: 0.05rem;
+  margin: 0.05vw;
   transform: translateY(200%);
 }
 main ul li span.active {
@@ -86,7 +86,7 @@ main ul li span.active {
   transition: 1s ease-out;
 }
 main ul li span.gap {
-  width: 2rem;
+  width: 2vw;
 }
 main ul li:hover {
   opacity: 0.5;
