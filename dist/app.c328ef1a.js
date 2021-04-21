@@ -147,6 +147,7 @@ function showItem(entries) {
       var letters = _toConsumableArray(entry.target.querySelectorAll("span"));
 
       letters.forEach(function (letter, idx) {
+        // console.log(idx);
         setTimeout(function () {
           letter.classList.add("active");
         }, idx * 10);

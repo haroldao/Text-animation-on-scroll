@@ -16,6 +16,7 @@ function showItem(entries){
         if(entry.isIntersecting){
             let letters = [...entry.target.querySelectorAll("span")];
             letters.forEach((letter, idx) => {
+                // console.log(idx);
                 setTimeout(() => {
                     letter.classList.add("active")
                 }, idx * 10);
