@@ -86,7 +86,7 @@ main{
                 font-size: 4rem;
                 text-transform: uppercase;
                 margin: .05rem;
-                // transform: translateY(200%);
+                transform: translateY(200%);
                 &.active{
                     transform: translateY(0%);
                     transition: 1s ease-out;

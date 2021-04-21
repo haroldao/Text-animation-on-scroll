@@ -141,6 +141,11 @@ var observer = new IntersectionObserver(showItem, options);
 
 function showItem(entries) {
   console.log(entries);
+  entries.forEach(function (entry) {
+    if (entry.isIntersecting) {
+      entry.target.children[0].classList.add("active");
+    }
+  });
 }
 
 listItems.forEach(function (item) {
@@ -174,7 +179,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55854" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60370" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

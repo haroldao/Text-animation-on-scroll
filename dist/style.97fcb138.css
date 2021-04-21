@@ -78,6 +78,7 @@ main ul li span {
   font-size: 4rem;
   text-transform: uppercase;
   margin: 0.05rem;
+  transform: translateY(200%);
 }
 main ul li span.active {
   transform: translateY(0%);
