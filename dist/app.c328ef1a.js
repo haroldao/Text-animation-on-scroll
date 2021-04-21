@@ -149,7 +149,7 @@ function showItem(entries) {
       letters.forEach(function (letter, idx) {
         setTimeout(function () {
           letter.classList.add("active");
-        }, 10);
+        }, idx * 10);
       });
       entry.target.children[0].classList.add("active");
     }

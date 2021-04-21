@@ -91,6 +91,9 @@ main{
                     transform: translateY(0%);
                     transition: 1s ease-out;
                 }
+                &.gap{
+                    width: 2rem;
+                }
                 &:hover{
                     opacity: .5;
                     cursor: pointer;

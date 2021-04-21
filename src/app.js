@@ -18,7 +18,7 @@ function showItem(entries){
             letters.forEach((letter, idx) => {
                 setTimeout(() => {
                     letter.classList.add("active")
-                }, 10);
+                }, idx * 10);
             })
             entry.target.children[0].classList.add("active")
         }
