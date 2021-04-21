@@ -71,6 +71,7 @@ main ul li {
   display: flex;
   margin-bottom: 0.5rem;
   justify-content: flex-end;
+  transition: 0.2s ease-out;
 }
 main ul li span {
   display: block;
