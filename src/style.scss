@@ -94,10 +94,11 @@ main{
                 &.gap{
                     width: 2rem;
                 }
-                &:hover{
+                
+            }
+            &:hover{
                     opacity: .5;
                     cursor: pointer;
-                }
             }
         }
     }

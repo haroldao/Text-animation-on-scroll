@@ -87,7 +87,7 @@ main ul li span.active {
 main ul li span.gap {
   width: 2rem;
 }
-main ul li span:hover {
+main ul li:hover {
   opacity: 0.5;
   cursor: pointer;
 }
