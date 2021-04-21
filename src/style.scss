@@ -28,6 +28,15 @@ li{
 @font-face{
     font-family: "Bon Vivant";
     src: url('fonts/Bon Vivant Serif.otf');
+    src: url('fonts/BonVivantSerif.eot');
+    src: url('fonts/BonVivantSerif.eot?#iefix') format('embedded-opentype'),
+        url('fonts/BonVivantSerif.woff2') format('woff2'),
+        url('fonts/BonVivantSerif.woff') format('woff'),
+        url('fonts/BonVivantSerif.ttf') format('truetype'),
+        url('fonts/BonVivantSerif.svg#BonVivantSerif') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 main{
