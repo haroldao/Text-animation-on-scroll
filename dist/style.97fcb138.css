@@ -16,6 +16,19 @@ html, body {
   padding: 0;
 }
 
+::-webkit-scrollbar-thumb {
+  background: var(--var-color-2);
+}
+
+::-webkit-scrollbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--var-color-1);
+  width: 7px;
+  margin: 2px;
+}
+
 li {
   list-style: none;
 }
@@ -28,6 +41,11 @@ li {
 @font-face {
   font-family: "Bon Vivant";
   src: url("/Bon Vivant Serif.58bb52e1.otf");
+  src: url("/BonVivantSerif.e5938014.eot");
+  src: url("/BonVivantSerif.e5938014.eot?#iefix") format("embedded-opentype"), url("/BonVivantSerif.d9b23a8b.woff2") format("woff2"), url("/BonVivantSerif.94e5a653.woff") format("woff"), url("/BonVivantSerif.2f72efe7.ttf") format("truetype"), url("/BonVivantSerif.143f68ce.svg#BonVivantSerif") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 main h1 {
   position: absolute;

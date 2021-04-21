@@ -16,6 +16,19 @@ html, body{
     padding: 0;
 }
 
+::-webkit-scrollbar-thumb {
+    background: var(--var-color-2);
+}
+
+::-webkit-scrollbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--var-color-1);
+    width: 7px;
+    margin: 2px;
+}
+
 li{
     list-style: none;
 }
